@@ -1,0 +1,13 @@
+package com.example.produceapi;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest
+class ProduceApiApplicationTests {
+
+    @Test
+    void contextLoads() {
+    }
+
+}
