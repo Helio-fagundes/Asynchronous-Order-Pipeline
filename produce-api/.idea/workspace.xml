@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="85b9440f-25f9-4251-9e70-8fad50028bcc" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../infra/terraform/database.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../infra/terraform/firewall.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../infra/terraform/load_balancer.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../infra/terraform/messaging.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../infra/terraform/network.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../infra/terraform/repository.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../infra/terraform/.terraform.lock.hcl" beforeDir="false" afterPath="$PROJECT_DIR$/../infra/terraform/.terraform.lock.hcl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../infra/terraform/bucket.tf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../infra/terraform/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/../infra/terraform/main.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../infra/terraform/variables.tf" beforeDir="false" afterPath="$PROJECT_DIR$/../infra/terraform/variables.tf" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CopilotChats">
+    <option name="panelChat">
+      <chat>
+        <option name="activeSessionId" value="edccaf70-2c79-43fe-b362-5efed0d669a9" />
+        <option name="sessions">
+          <session>
+            <option name="chatType" value="PANEL" />
+            <option name="id" value="edccaf70-2c79-43fe-b362-5efed0d669a9" />
+            <option name="modeId" value="Agent" />
+            <option name="modelType" value="builtin_family" />
+            <option name="modelValue" value="auto" />
+            <option name="targetType" value="LOCAL" />
+          </session>
+        </option>
+        <option name="type" value="PANEL" />
+      </chat>
+    </option>
+  </component>
+  <component name="CopilotPersistence">
+    <persistenceIdMap>
+      <entry key="_/Users/helio/IdeaProjects/Asynchronous-Order-Pipeline/produce-api" value="3IjdcLb91EbNDhgWhljVvKhW4j1" />
+    </persistenceIdMap>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Record" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Helio-fagundes&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Helio-fagundes/Asynchronous-Order-Pipeline.git&quot;,
+    &quot;accountId&quot;: &quot;da4492a5-e0f4-477e-9032-774f69429e4f&quot;
+  }
+}</component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3IjdcLb91EbNDhgWhljVvKhW4j1" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.application.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager" selected="Application.application">
+    <configuration name="application" type="Application" factoryName="Application">
+      <envs>
+        <env name="aws_region" value="US_EAST_1" />
+        <env name="sqs_fila_pedidos_url" value="https://sqs.us-east-1.amazonaws.com/294892597124/fila-pedidos" />
+      </envs>
+      <option name="MAIN_CLASS_NAME" value="com.example.produceapi.ProduceApiApplication" />
+      <module name="produce-api" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProduceApiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="produce-api" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.produceapi.ProduceApiApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.application" />
+      <item itemvalue="Spring Boot.ProduceApiApplication" />
+    </list>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="85b9440f-25f9-4251-9e70-8fad50028bcc" name="Changes" comment="" />
+      <created>1788281990780</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1788281990780</updated>
+      <workItem from="1788281991924" duration="6955000" />
+      <workItem from="1788798909555" duration="6589000" />
+      <workItem from="1788882523244" duration="17127000" />
+      <workItem from="1789049833293" duration="753000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="github-copilot-workspace">
+    <instructionFileLocations>
+      <option value=".github/instructions" />
+    </instructionFileLocations>
+    <promptFileLocations>
+      <option value=".github/prompts" />
+    </promptFileLocations>
+  </component>
+</project>
