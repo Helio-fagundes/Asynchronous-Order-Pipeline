@@ -1,3 +1,8 @@
-.terraform/
+# Ignorar arquivos de variáveis do Terraform em qualquer pasta
+*.tfvars
+*.tfvars.json
+
+# Aproveite para ignorar os estados do terraform que também estão aparecendo ali
 *.tfstate
 *.tfstate.*
+.terraform/
