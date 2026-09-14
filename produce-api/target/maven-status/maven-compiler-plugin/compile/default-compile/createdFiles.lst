@@ -1,0 +1,8 @@
+com/example/produceapi/ProduceApiApplication.class
+com/example/produceapi/config/healthCheck.class
+com/example/produceapi/entity/Pedido.class
+com/example/produceapi/config/DynamoDbConfig.class
+com/example/produceapi/config/SqsConfig.class
+com/example/produceapi/service/ProduceService.class
+com/example/produceapi/controller/ProducerController.class
+com/example/produceapi/service/dto/ProducerRequestDto.class

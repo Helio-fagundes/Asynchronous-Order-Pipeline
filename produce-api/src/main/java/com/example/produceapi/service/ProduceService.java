@@ -23,8 +23,12 @@ public class ProduceService {
     @Value("${sqs_url}")
     private String queueUrl;
 
-    public ProduceService(DynamoDbEnhancedClient enhancedClient, SqsClient sqsClient) {
-        this.producerTable = enhancedClient.table("tabela-requisicoes-validadas", TableSchema.fromBean(Pedido.class));
+    public ProduceService(
+            DynamoDbEnhancedClient enhancedClient,
+            SqsClient sqsClient,
+            @Value("${dynamo_table_name}") String tableName
+    ) {
+        this.producerTable = enhancedClient.table(tableName, TableSchema.fromBean(Pedido.class));
         this.sqsClient = sqsClient;
         this.objectMapper = new ObjectMapper();
     }

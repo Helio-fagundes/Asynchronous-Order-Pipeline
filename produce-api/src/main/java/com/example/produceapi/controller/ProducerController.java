@@ -2,7 +2,6 @@ package com.example.produceapi.controller;
 
 import com.example.produceapi.service.ProduceService;
 import com.example.produceapi.service.dto.ProducerRequestDto;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
