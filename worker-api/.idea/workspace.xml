@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f6c112ed-6583-4d38-9d9e-16a50e43fe2f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../infra/terraform/ecs.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../infra/terraform/task_role.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../produce-api/src/main/java/com/example/produceapi/config/healthCheck.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/workerapi/config/healthCheck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../infra/terraform/.terraform.lock.hcl" beforeDir="false" afterPath="$PROJECT_DIR$/../infra/terraform/.terraform.lock.hcl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../infra/terraform/database.tf" beforeDir="false" afterPath="$PROJECT_DIR$/../infra/terraform/database.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../infra/terraform/firewall.tf" beforeDir="false" afterPath="$PROJECT_DIR$/../infra/terraform/firewall.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../infra/terraform/load_balancer.tf" beforeDir="false" afterPath="$PROJECT_DIR$/../infra/terraform/load_balancer.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../infra/terraform/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/../infra/terraform/main.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../infra/terraform/messaging.tf" beforeDir="false" afterPath="$PROJECT_DIR$/../infra/terraform/messaging.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../infra/terraform/network.tf" beforeDir="false" afterPath="$PROJECT_DIR$/../infra/terraform/network.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../infra/terraform/repository.tf" beforeDir="false" afterPath="$PROJECT_DIR$/../infra/terraform/repository.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../infra/terraform/variables.tf" beforeDir="false" afterPath="$PROJECT_DIR$/../infra/terraform/variables.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../produce-api/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../produce-api/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../produce-api/src/main/java/com/example/produceapi/config/SqsConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../produce-api/src/main/java/com/example/produceapi/config/SqsConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../produce-api/src/main/java/com/example/produceapi/controller/ProducerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../produce-api/src/main/java/com/example/produceapi/controller/ProducerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../produce-api/src/main/java/com/example/produceapi/service/ProduceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../produce-api/src/main/java/com/example/produceapi/service/ProduceService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../produce-api/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../produce-api/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../produce-api/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../produce-api/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../produce-api/target/classes/com/example/produceapi/config/SqsConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/../produce-api/target/classes/com/example/produceapi/config/SqsConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../produce-api/target/classes/com/example/produceapi/controller/ProducerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../produce-api/target/classes/com/example/produceapi/controller/ProducerController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../produce-api/target/classes/com/example/produceapi/service/ProduceService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../produce-api/target/classes/com/example/produceapi/service/ProduceService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/workerapi/config/SnsConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/workerapi/config/SnsConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/workerapi/config/SqsConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/workerapi/config/SqsConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/workerapi/service/WorkerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/workerapi/service/WorkerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CopilotChats">
+    <option name="panelChat">
+      <chat>
+        <option name="activeSessionId" value="1c35101e-e01b-4c44-825a-dac42ae47101" />
+        <option name="sessions">
+          <session>
+            <option name="chatType" value="PANEL" />
+            <option name="id" value="1c35101e-e01b-4c44-825a-dac42ae47101" />
+            <option name="modeId" value="Agent" />
+            <option name="modelType" value="builtin_family" />
+            <option name="modelValue" value="auto" />
+            <option name="targetType" value="LOCAL" />
+          </session>
+        </option>
+        <option name="type" value="PANEL" />
+      </chat>
+    </option>
+  </component>
+  <component name="CopilotPersistence">
+    <persistenceIdMap>
+      <entry key="_/Users/helio/IdeaProjects/Asynchronous-Order-Pipeline/worker-api" value="3J3RhM83xHfmNfZyaAPySfU2Fcu" />
+    </persistenceIdMap>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Helio-fagundes&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Helio-fagundes/Asynchronous-Order-Pipeline.git&quot;,
+    &quot;accountId&quot;: &quot;da4492a5-e0f4-477e-9032-774f69429e4f&quot;
+  }
+}</component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3J3RhM83xHfmNfZyaAPySfU2Fcu" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.application.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/helio/IdeaProjects/Asynchronous-Order-Pipeline/worker-api/src/main/java/com/example/workerapi/config",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/com/example/workerapi/config" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.workerapi.config" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.application">
+    <configuration name="application" type="Application" factoryName="Application">
+      <envs>
+        <env name="sqs_fila_pedidos_url" value="https://sqs.us-east-1.amazonaws.com/294892597124/fila-pedidos" />
+        <env name="sns_topic_arn" value="arn:aws:sns:us-east-1:294892597124:notificacao-pipeline" />
+      </envs>
+      <option name="MAIN_CLASS_NAME" value="com.example.workerapi.WorkerApiApplication" />
+      <module name="worker-api" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WorkerApiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="worker-api" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.workerapi.WorkerApiApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.application" />
+      <item itemvalue="Spring Boot.WorkerApiApplication" />
+    </list>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f6c112ed-6583-4d38-9d9e-16a50e43fe2f" name="Changes" comment="" />
+      <created>1788887885759</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1788887885759</updated>
+      <workItem from="1788887886984" duration="9733000" />
+      <workItem from="1789049850157" duration="5641000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="github-copilot-workspace">
+    <instructionFileLocations>
+      <option value=".github/instructions" />
+    </instructionFileLocations>
+    <promptFileLocations>
+      <option value=".github/prompts" />
+    </promptFileLocations>
+  </component>
+</project>

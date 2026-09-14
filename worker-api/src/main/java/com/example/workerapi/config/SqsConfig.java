@@ -11,14 +11,17 @@ import java.net.URI;
 @Configuration
 public class SqsConfig {
 
-    @Value("${spring.cloud.aws.sqs.endpoint:https://sqs.us-east-1.amazonaws.com}")
+    @Value("${sqs_url}")
     private String sqsEndpoint;
+
+    @Value("${AWS_REGION}")
+    private String region;
 
     @Bean
     public SqsClient sqsClient() {
         return SqsClient.builder()
                 .endpointOverride(URI.create(sqsEndpoint))
-                .region(Region.US_EAST_1)
+                .region(Region.of(region))
                 .build();
     }
 }

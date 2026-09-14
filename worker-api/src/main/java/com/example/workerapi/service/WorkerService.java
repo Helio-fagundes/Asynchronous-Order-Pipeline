@@ -21,11 +21,15 @@ public class WorkerService {
     private final SnsClient snsClient;
     private final ObjectMapper objectMapper;
 
-    @Value("${topic-arn}")
+    @Value("${topic_arn}")
     private String topicArn;
 
-    public WorkerService(DynamoDbEnhancedClient enhancedClient, SnsClient snsClient) {
-        this.workerTable = enhancedClient.table("tabela-requisicoes-validadas", TableSchema.fromBean(Pedido.class));
+    public WorkerService(
+            DynamoDbEnhancedClient enhancedClient,
+            SnsClient snsClient,
+            @Value("${dynamo_table_name}") String tableName
+    ) {
+        this.workerTable = enhancedClient.table(tableName, TableSchema.fromBean(Pedido.class));
         this.snsClient = snsClient;
         this.objectMapper = new ObjectMapper();
     }

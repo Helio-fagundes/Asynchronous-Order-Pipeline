@@ -1,4 +1,4 @@
-package com.example.produceapi.config;
+package com.example.workerapi.config;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;

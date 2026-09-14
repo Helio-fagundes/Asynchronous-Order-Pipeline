@@ -1,0 +1,7 @@
+com/example/workerapi/config/DynamoDbConfig.class
+com/example/workerapi/config/SqsConfig.class
+com/example/workerapi/entity/Pedido.class
+com/example/workerapi/WorkerApiApplication.class
+com/example/workerapi/service/WorkerService.class
+com/example/workerapi/config/SnsConfig.class
+com/example/workerapi/config/healthCheck.class
