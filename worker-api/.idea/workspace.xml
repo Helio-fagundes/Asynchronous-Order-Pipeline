@@ -5,13 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f6c112ed-6583-4d38-9d9e-16a50e43fe2f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../infra/terraform/ecs.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../infra/terraform/task_role.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../produce-api/src/main/java/com/example/produceapi/config/healthCheck.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/workerapi/config/healthCheck.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../infra/terraform/.terraform.lock.hcl" beforeDir="false" afterPath="$PROJECT_DIR$/../infra/terraform/.terraform.lock.hcl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../infra/terraform/database.tf" beforeDir="false" afterPath="$PROJECT_DIR$/../infra/terraform/database.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../infra/terraform/ecs.tf" beforeDir="false" afterPath="$PROJECT_DIR$/../infra/terraform/ecs.tf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../infra/terraform/firewall.tf" beforeDir="false" afterPath="$PROJECT_DIR$/../infra/terraform/firewall.tf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../infra/terraform/load_balancer.tf" beforeDir="false" afterPath="$PROJECT_DIR$/../infra/terraform/load_balancer.tf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../infra/terraform/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/../infra/terraform/main.tf" afterDir="false" />
@@ -19,19 +15,6 @@
       <change beforePath="$PROJECT_DIR$/../infra/terraform/network.tf" beforeDir="false" afterPath="$PROJECT_DIR$/../infra/terraform/network.tf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../infra/terraform/repository.tf" beforeDir="false" afterPath="$PROJECT_DIR$/../infra/terraform/repository.tf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../infra/terraform/variables.tf" beforeDir="false" afterPath="$PROJECT_DIR$/../infra/terraform/variables.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../produce-api/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../produce-api/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../produce-api/src/main/java/com/example/produceapi/config/SqsConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../produce-api/src/main/java/com/example/produceapi/config/SqsConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../produce-api/src/main/java/com/example/produceapi/controller/ProducerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../produce-api/src/main/java/com/example/produceapi/controller/ProducerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../produce-api/src/main/java/com/example/produceapi/service/ProduceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../produce-api/src/main/java/com/example/produceapi/service/ProduceService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../produce-api/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../produce-api/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../produce-api/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../produce-api/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../produce-api/target/classes/com/example/produceapi/config/SqsConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/../produce-api/target/classes/com/example/produceapi/config/SqsConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../produce-api/target/classes/com/example/produceapi/controller/ProducerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../produce-api/target/classes/com/example/produceapi/controller/ProducerController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../produce-api/target/classes/com/example/produceapi/service/ProduceService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../produce-api/target/classes/com/example/produceapi/service/ProduceService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/workerapi/config/SnsConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/workerapi/config/SnsConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/workerapi/config/SqsConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/workerapi/config/SqsConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/workerapi/service/WorkerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/workerapi/service/WorkerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,6 +85,8 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.application.executor": "Run",
+    "Maven.worker-api [clean].executor": "Run",
+    "Maven.worker-api [package].executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
@@ -161,6 +146,7 @@
       <updated>1788887885759</updated>
       <workItem from="1788887886984" duration="9733000" />
       <workItem from="1789049850157" duration="5641000" />
+      <workItem from="1789246509943" duration="5774000" />
     </task>
     <servers />
   </component>
