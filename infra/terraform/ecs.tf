@@ -9,13 +9,13 @@ resource "aws_ecs_task_definition" "task_def_producer" {
   cpu                      = "256"
   memory                   = "512"
 
-  task_role_arn = aws_iam_role.ecs_task_role.arn
+  task_role_arn      = aws_iam_role.ecs_task_role.arn
   execution_role_arn = aws_iam_role.ecs_execution_role.arn
 
   container_definitions = jsonencode([
     {
-      name      = "producer-container"
-      image     = "public.ecr.aws/nginx/nginx:alpine"
+      name  = "producer-container"
+      image = "${aws_ecr_repository.ecr_repo_producer.repository_url}:latest"
       environment = [
         {
           name  = "SQS_URL"
@@ -26,10 +26,18 @@ resource "aws_ecs_task_definition" "task_def_producer" {
           value = aws_dynamodb_table.requisicoes.name
         },
         {
-          name  = "TOPIC_ARN"
-          value = aws_sns_topic.notificacao_pipeline.arn
+          name  = "AWS_REGION"
+          value = var.region
         }
       ]
+      logConfiguration = {
+        logDriver = "awslogs"
+        options = {
+          awslogs-group         = aws_cloudwatch_log_group.producer.name
+          awslogs-region        = var.region
+          awslogs-stream-prefix = "ecs"
+        }
+      }
       essential = true
       portMappings = [
         {
@@ -45,12 +53,12 @@ resource "aws_ecs_service" "producer_service" {
   name            = "producer-service"
   cluster         = aws_ecs_cluster.ecs_cluster.id
   task_definition = aws_ecs_task_definition.task_def_producer.arn
-  desired_count = 2
-  launch_type = "FARGATE"
+  desired_count   = 2
+  launch_type     = "FARGATE"
 
   network_configuration {
-    subnets         = [aws_subnet.subnet_private_a.id, aws_subnet.subnet_private_b.id]
-    security_groups = [aws_security_group.ecs_sg.id]
+    subnets          = [aws_subnet.subnet_private_a.id, aws_subnet.subnet_private_b.id]
+    security_groups  = [aws_security_group.ecs_sg.id]
     assign_public_ip = false
   }
 
@@ -78,38 +86,64 @@ resource "aws_ecs_service" "producer_service" {
 # Worker
 #========================================================================
 
-resource "aws_ecs_task_definition" "worker" {
+resource "aws_ecs_task_definition" "task_def_worker" {
   family                   = "worker-task"
   requires_compatibilities = ["FARGATE"]
   network_mode             = "awsvpc"
   cpu                      = "256"
   memory                   = "512"
 
-  task_role_arn            = aws_iam_role.ecs_task_role.arn
-  execution_role_arn       = aws_iam_role.ecs_execution_role.arn
+  task_role_arn      = aws_iam_role.ecs_task_role.arn
+  execution_role_arn = aws_iam_role.ecs_execution_role.arn
 
   container_definitions = jsonencode([{
-    name      = "worker-api"
-    image     = "public.ecr.aws/nginx/nginx:alpine"
+    name  = "worker-container"
+    image = "${aws_ecr_repository.ecr_repo_worker.repository_url}:latest"
+    environment = [
+      {
+        name  = "SQS_URL"
+        value = aws_sqs_queue.fila_pedidos.id
+      },
+      {
+        name  = "DYNAMODB_TABLE"
+        value = aws_dynamodb_table.requisicoes.name
+      },
+      {
+        name  = "TOPIC_ARN"
+        value = aws_sns_topic.notificacao_pipeline.arn
+      },
+      {
+        name  = "AWS_REGION"
+        value = var.region
+      }
+    ]
+    logConfiguration = {
+      logDriver = "awslogs"
+      options = {
+        awslogs-group         = aws_cloudwatch_log_group.worker.name
+        awslogs-region        = var.region
+        awslogs-stream-prefix = "ecs"
+      }
+    }
     essential = true
     portMappings = [
       {
         containerPort = 8081
-        hostPort = 8081
-      }]
+        hostPort      = 8081
+    }]
   }])
 }
 
 resource "aws_ecs_service" "worker_service" {
   name            = "worker-service"
   cluster         = aws_ecs_cluster.ecs_cluster.id
-  task_definition = aws_ecs_task_definition.worker.arn
+  task_definition = aws_ecs_task_definition.task_def_worker.arn
   desired_count   = 2
   launch_type     = "FARGATE"
 
   network_configuration {
-    subnets         = [aws_subnet.subnet_private_a.id, aws_subnet.subnet_private_b.id]
-    security_groups = [aws_security_group.ecs_sg.id]
+    subnets          = [aws_subnet.subnet_private_a.id, aws_subnet.subnet_private_b.id]
+    security_groups  = [aws_security_group.ecs_sg.id]
     assign_public_ip = false
   }
 
