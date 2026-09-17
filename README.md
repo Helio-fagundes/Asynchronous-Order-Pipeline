@@ -161,4 +161,4 @@ Após o deploy da infraestrutura, a AWS enviará um e-mail de verificação do A
 
 Desenvolvido por **Helio Fagundes**.
 
-Sinta-se à vontade para entrar em contato ou conectar através do [LinkedIn]([seu-link-aqui](https://www.linkedin.com/in/helio-fagundes/))!
+Sinta-se à vontade para entrar em contato ou conectar através do [LinkedIn](https://www.linkedin.com/in/helio-fagundes/)!
