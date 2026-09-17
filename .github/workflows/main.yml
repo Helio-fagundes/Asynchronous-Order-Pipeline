@@ -18,9 +18,6 @@ jobs:
     name: Provision AWS infrastructure
     runs-on: ubuntu-latest
     environment: Variables
-    env:
-      TF_VAR_aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
-      TF_VAR_aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
     outputs:
       ecr_repo_producer_url: ${{ steps.terraform-output.outputs.ECR_REPO_PRODUCER_URL }}
       ecr_repo_worker_url: ${{ steps.terraform-output.outputs.ECR_REPO_WORKER_URL }}
@@ -49,10 +46,20 @@ jobs:
 
       - name: Terraform plan
         working-directory: infra/terraform
+        env:
+          TF_VAR_region: ${{ secrets.AWS_REGION }}
+          TF_VAR_aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          TF_VAR_aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          TF_VAR_email: ${{ secrets.USER_EMAIL }}
         run: terraform plan
 
       - name: Terraform apply
         working-directory: infra/terraform
+        env:
+          TF_VAR_region: ${{ secrets.AWS_REGION }}
+          TF_VAR_aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          TF_VAR_aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          TF_VAR_email: ${{ secrets.USER_EMAIL }}
         run: terraform apply -auto-approve
 
       - name: Terraform output
